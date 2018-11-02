@@ -1,4 +1,4 @@
-# PwnDock
+# PenDock
 
 This is my slightly customized version of
 [pendock](https://github.com/drtychai/pendock). That image is pushed to
