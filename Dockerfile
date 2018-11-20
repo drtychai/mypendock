@@ -5,10 +5,6 @@ RUN cd ~/tools \
     && git clone --depth 1 https://github.com/hugsy/gef.git \
     && echo "source ~/tools/gef/gef.py" > ~/.gdbinit
 
-# Install Oh-My-ZSH
-RUN apt install zsh -y
-RUN curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh - | sh
-
 # Install dotfiles
 RUN cd ~/tools \
     && git clone --depth 1 https://github.com/drtychai/dotfiles.git \
