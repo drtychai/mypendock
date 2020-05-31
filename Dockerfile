@@ -1,5 +1,12 @@
 FROM drtychai/pendock:latest
 
+# Oh-my-ZSH
+RUN apt update --fix-missing \
+    && apt install -y zsh
+
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUN chsh -s /bin/zsh
+
 # GEF
 RUN cd ~/tools \
     && git clone --depth 1 https://github.com/hugsy/gef.git \
