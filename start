@@ -4,7 +4,7 @@ docker run --rm --detach --privileged -it \
 	--net=host \
 	-v $(pwd):/mnt \
 	-v $HOME/ctf:/root/ctf \
-	--hostname kpen \
+    --hostname kpen \
 	--name kpen \
 	kpen \
 	bash \
