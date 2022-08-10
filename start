@@ -1,11 +1,10 @@
 #!/bin/bash
 
-docker run --rm --detach --privileged -it \
+docker run --rm --detach -it --privileged \
 	--net=host \
-	-v $(pwd):/mnt \
-	-v $HOME/ctf:/root/ctf \
+    -v $(pwd):/mnt \
     --hostname kpen \
 	--name kpen \
 	kpen \
-	bash \
+	/sbin/init \
     && echo "[+] Started"
